@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Liquid Glass Lock</title>
+    <style>
+        :root {
+            --bg-color: #0c0e14;
+            --card-bg: #141824;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-color: #6ee7b7;
+            --accent-bg: rgba(16, 185, 129, 0.12);
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            display: inline-block;
+            background: var(--accent-bg);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: var(--text-color);
+        }
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            margin: 20px 0;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last Updated: November 6, 2026</div>
+
+        <p>This Privacy Policy describes how <strong>Liquid Glass Lock</strong> ("we", "our", or "the App") handles your information. Your privacy is a fundamental core principle of this application.</p>
+
+        <div class="highlight-box">
+            <strong>🔒 100% On-Device Processing Guarantee:</strong>
+            <p style="margin-top: 6px; margin-bottom: 0;">Liquid Glass Lock executes all wallpaper depth segmentation, color tone extraction, and liquid glass shader rendering locally on your physical device. <strong>No photos, wallpapers, or camera images are ever transmitted to external servers, cloud databases, or third parties.</strong></p>
+        </div>
+
+        <h2>1. Information We Do NOT Collect</h2>
+        <ul>
+            <li><strong>No Photos or Personal Media:</strong> The wallpapers you choose remain strictly within your device's private application storage.</li>
+            <li><strong>No Biometric Data:</strong> When unlocking, the App requests Android's official system keyguard dismissal API. Fingerprint, face unlock, and PIN credentials are authenticated exclusively by your phone's secure hardware (Titan/Knox) — the App never sees or handles your authentication data.</li>
+            <li><strong>No Location or Audio Data:</strong> We do not access or record GPS location, microphone audio, or contacts.</li>
+        </ul>
+
+        <h2>2. Permissions and How They Are Used</h2>
+        <ul>
+            <li><strong>Display over other apps (<code>SYSTEM_ALERT_WINDOW</code>):</strong> Required to present the liquid glass clock screen above the system keyguard when your display turns on.</li>
+            <li><strong>Foreground Service & Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Required to keep the lock service active and responsive when the screen wakes up, and to provide a persistent, one-tap quick disable control in your notification drawer.</li>
+            <li><strong>Media Picker Access:</strong> Used solely to allow you to select a personal wallpaper from your photo library. The selected image is stored locally inside the app's sandboxed directory.</li>
+        </ul>
+
+        <h2>3. Third-Party Services & Monetization</h2>
+        <p>The App integrates trusted third-party SDKs provided by Google to support monetization and optional upgrades:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> The free tier of the App displays banner and interstitial advertisements strictly within the setup screen. AdMob may collect pseudonymous advertising identifiers (GAID) and crash diagnostics to serve relevant ads. You can review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy & Terms</a>.</li>
+            <li><strong>Google Play In-App Billing:</strong> Used to process purchases of "Liquid Glass Pro" (which permanently removes all ads and unlocks premium personalization). All payment processing is securely handled by Google Play. We do not store or process credit cards or bank details.</li>
+        </ul>
+
+        <h2>4. Data Retention and Security</h2>
+        <p>All user preferences (clock scale, selected color mode, timeout preferences) are stored strictly on-device using Android's native <code>SharedPreferences</code>. Clearing the application's data or uninstalling the app permanently removes all stored wallpapers and settings.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Liquid Glass Lock does not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, please contact the developer at:</p>
+        <p><strong>Email:</strong> <a href="mailto:piyushat25@gmail.com">piyushat25@gmail.com</a></p>
+    </div>
+</body>
+</html>
